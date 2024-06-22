@@ -41,6 +41,7 @@ body{
     border-radius: .5rem;
     color: var(--black);
     cursor: pointer;
+    background: none;
 }
 
 .btn:hover{
@@ -218,5 +219,52 @@ body{
 
 .header .shopping-cart.active{
     right: 2rem;
-    transition: all .4s linear;
+    transition: all .3s linear;
+}
+
+.header .login-form{
+    width: 22rem;
+    /* border: .1rem solid; */
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: white;
+    text-align: center;
+}
+
+.header .login-form h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login-form .box{
+    width: 100%;
+    /* border: 1px solid; */
+    margin: .7rem 0;
+    border-radius: .5rem;
+    background: #eee;
+    padding: .5rem;
+    font-size: 1rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: .9rem;
+    padding: .3rem 0;
+    color: var(--light-color);
+}
+
+.header .login-form a{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.header .login-form.active{
+    right: 2rem;
+    transition: all .3s linear;
 }
