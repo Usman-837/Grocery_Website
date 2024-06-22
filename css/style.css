@@ -64,6 +64,8 @@ body{
     box-shadow: var(--box-shadow);
 }
 
+/* Logo */
+
 .header .logo{
     font-size: 1.5rem;
     font-weight: bold;
@@ -72,6 +74,8 @@ body{
 .header .logo i{
     color: var(--green);
 }
+
+/* Menu Bar */
 
 .header .navbar a{ 
     font-size: 1rem;
@@ -82,6 +86,8 @@ body{
 .header .navbar a:hover{
     color: var(--green);
 }
+
+/* icons */
 
 .header .icons{
     display: flex;
@@ -110,6 +116,8 @@ body{
     display: none;
 }
 
+/* Search Form */
+
 .header .search-form{
     position: absolute;
     top: 110%;
@@ -126,7 +134,7 @@ body{
 
 .header .search-form.active{
     right: 2rem;
-    transition: .4s linear;
+    transition: all .3s linear;
 }
 
 .header .search-form input{
@@ -149,6 +157,8 @@ body{
 .header .search-form label:hover{
     color: var(--green);
 }
+
+/* Shopping Cart */
 
 .header .shopping-cart{
     /* border: 1px solid; */
@@ -221,6 +231,8 @@ body{
     right: 2rem;
     transition: all .3s linear;
 }
+
+/* Login Form */
 
 .header .login-form{
     width: 22rem;
