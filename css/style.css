@@ -152,7 +152,7 @@ body{
 .header .shopping-cart{
     /* border: 1px solid; */
     position: absolute;
-    top: 100%;
+    top: 110%;
     right: -110%;
     padding: 1rem;
     border-radius: .5rem;
