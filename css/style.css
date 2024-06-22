@@ -32,6 +32,24 @@ body{
     background: #eee;
 }
 
+.btn{
+    border: .2rem solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .6rem 3rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--green);
+    color: white;
+}
+
+/* Header Section */
+
 .header{
     position: fixed;
     top: 0;
@@ -129,4 +147,76 @@ body{
 
 .header .search-form label:hover{
     color: var(--green);
+}
+
+.header .shopping-cart{
+    /* border: 1px solid; */
+    position: absolute;
+    top: 100%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 20rem;
+    background-color: white;
+}
+
+.header .shopping-cart .box{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: .5rem 0;
+}
+
+.header .shopping-cart .box img{
+    height: 6rem;
+}
+
+.header .shopping-cart .box .fa-trash{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 52%;
+    right: 1rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .content h3{
+    font-size: 1rem;
+    color: var(--black);
+    padding-bottom: .2rem;
+}
+
+.header .shopping-cart .box .content span{  
+    font-size: .8rem;
+    color: var(--light-color);
+}
+
+.header .shopping-cart .box .content .quantity{
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .box .fa-trash:hover{
+    color: var(--green);
+}
+
+.header .shopping-cart .total{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+.header .shopping-cart .btn{
+    display: block;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: all .4s linear;
 }
