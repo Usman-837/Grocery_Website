@@ -22,7 +22,6 @@
 }
 
 html{
-    /* font-size: 62.5%; */
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
@@ -114,6 +113,11 @@ body{
 
 .Bar{
     display: none;
+}
+
+.header .navbar.active{
+    right: 2rem;
+    transition: all .3s linear;
 }
 
 /* Search Form */
@@ -279,4 +283,41 @@ body{
 .header .login-form.active{
     right: 2rem;
     transition: all .3s linear;
+}
+
+/* @Media Queries */
+
+@media (max-width: 991px) {
+    html{   
+    font-size: 75%;   
+    }
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Bar{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: white;
+    }
+    .header .navbar a{
+        font-size: 1.5rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }
 }
