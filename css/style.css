@@ -285,6 +285,43 @@ body{
     transition: all .3s linear;
 }
 
+/* CSS Code for Banner */
+section{
+    padding: 2rem 30%;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    background: url(../images/banner-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+}
+
+.home .content{
+    text-align: center;
+    width: 40rem;
+}
+
+.home .content h3{
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.home .content h3 span{
+    color: var(--green);
+}
+
+.home .content p{
+    color: var(--light-color);
+    font-size: .9rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
 /* @Media Queries */
 
 @media (max-width: 991px) {
@@ -292,6 +329,9 @@ body{
     font-size: 75%;   
     }
     .header{
+        padding: 2rem;
+    }
+    section{
         padding: 2rem;
     }
 }
