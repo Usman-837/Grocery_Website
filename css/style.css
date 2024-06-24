@@ -4,7 +4,7 @@
     --green: green;
     --black: #130f40;
     --light-color: #666;
-    --box-shadow: 0 .1rem 1rem rgba(0,0,0.1);
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     --border: 2rem solid rgba(0,0,0.1);
     --outline: .1rem solid rgba(0,0,0.1)
 }
@@ -287,7 +287,7 @@ body{
 
 /* CSS Code for Banner */
 section{
-    padding: 2rem 30%;
+    padding: 2rem 10%;
 }
 
 .home{
@@ -297,13 +297,13 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 12rem;
+    padding-top: 11rem;
     padding-bottom: 5rem;
 }
 
 .home .content{
     text-align: center;
-    width: 40rem;
+    width: 38rem;
 }
 
 .home .content h3{
@@ -322,6 +322,62 @@ section{
     line-height: 1.8;
 }
 
+/* CSS Code For Features Section */
+
+.features .heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.features .heading span{
+    background: var(--green);
+    color: white;
+    display: inline-block;
+    padding: .5rem 2rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0%); 
+}
+
+.features .box-container{
+    display: flex;
+    /* border: 1px solid black; */
+    gap: 1.5rem;
+}
+
+.features .box-container .box{
+    /* border: 2px solid red; */
+    padding: 2rem 2rem;
+    background: white;
+    outline: var(--outline);
+    outline-offset: -.5rem;
+    outline-color: var(--light-color);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.features .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+
+.features .box-container .box img{
+    margin: 1rem 0px;
+}
+
+.features .box-container .box h3{
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: var(--black);
+}
+
+.features .box-container .box p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--light-color);
+}
+
+
 /* @Media Queries */
 
 @media (max-width: 991px) {
@@ -331,9 +387,9 @@ section{
     .header{
         padding: 2rem;
     }
-    section{
+    /* section{
         padding: 2rem;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
@@ -359,5 +415,8 @@ section{
 @media (max-width: 450px) {
     html{
         font-size: 50%;
+    }
+    .header{
+        font-size: 1.5rem;
     }
 }
