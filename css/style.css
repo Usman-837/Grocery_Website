@@ -48,6 +48,22 @@ body{
     color: white;
 }
 
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.heading span{
+    background: var(--green);
+    color: white;
+    display: inline-block;
+    padding: .5rem 2rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0%); 
+}
+
 /* Header Section */
 
 .header{
@@ -324,22 +340,6 @@ section{
 
 /* CSS Code For Features Section */
 
-.features .heading{
-    text-align: center;
-    padding: 2rem 0;
-    padding-bottom: 3rem;
-    font-size: 2.2rem;
-    color: var(--black);
-}
-
-.features .heading span{
-    background: var(--green);
-    color: white;
-    display: inline-block;
-    padding: .5rem 2rem;
-    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0%); 
-}
-
 .features .box-container{
     display: flex;
     /* border: 1px solid black; */
@@ -351,7 +351,7 @@ section{
     padding: 2rem 2rem;
     background: white;
     outline: var(--outline);
-    outline-offset: -.5rem;
+    outline-offset: -1rem;
     outline-color: var(--light-color);
     text-align: center;
     box-shadow: var(--box-shadow);
@@ -377,6 +377,58 @@ section{
     color: var(--light-color);
 }
 
+/* CSS Code For Product Section */
+
+.products .products-slider{
+    /* border: 1px solid; */
+    padding: 1rem;
+}
+
+.products .products-slider:first-child{
+    margin-bottom: 2rem;
+}
+
+.products .products-slider .box{
+    /* border: 1px solid green; */
+    background: white;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 1rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: all .2s linear;
+}
+
+.products .products-slider .box:hover{
+    box-shadow: 1px 1px 10px 4px var(--green);   
+}
+
+.products .products-slider .box img{
+    height: 10rem;
+    width: 15rem;
+}
+
+.products .products-slider .box h1{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.products .products-slider .box .price{
+    font-size: 1.3rem;
+    color: var(--black);
+    padding: .5rem 0;
+}
+
+.products .products-slider .box .stars i{
+    font-size: 1.3rem;
+    color: orange;
+    padding: .5rem 0;
+}
+
+.products .products-slider .box .btn{
+    padding: .6rem 1.5rem;
+}
 
 /* @Media Queries */
 
@@ -387,9 +439,9 @@ section{
     .header{
         padding: 2rem;
     }
-    /* section{
+    section{
         padding: 2rem;
-    } */
+    }
 }
 
 @media (max-width: 768px) {
