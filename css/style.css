@@ -400,7 +400,7 @@ section{
     outline-offset: -1rem;
     outline: var(--outline);
     box-shadow: var(--box-shadow);
-    transition: all .2s linear;
+    /* transition: all .2s linear; */
 }
 
 .products .products-slider .box:hover{
@@ -479,6 +479,59 @@ section{
     padding: .6rem 2rem;
     font-size: 1rem;
 }
+
+/* CSS Code For Review Section */
+
+.review .review-slider{
+    /* border: 1px solid; */
+    padding: 1rem;
+}
+
+.review .review-slider:first-child{
+    margin-bottom: 2rem;
+}
+
+.review .review-slider .box{
+    /* border: 1px solid green; */
+    background: white;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    /* transition: all .2s linear; */
+}
+
+.review .review-slider .box:hover{
+    box-shadow: 1px 1px 10px 4px var(--green);   
+}
+
+.review .review-slider .box img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.review .review-slider .box p{
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1rem;
+}
+
+.review .review-slider .box h3{
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.review .review-slider .box .stars i{
+    font-size: 1.3rem;
+    color: orange;
+    padding: .5rem 0;
+}
+
 
 /* @Media Queries */
 
