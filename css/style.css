@@ -22,7 +22,7 @@
 }
 
 html{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
@@ -71,6 +71,7 @@ body{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -350,11 +351,13 @@ section{
     /* border: 2px solid red; */
     padding: 2rem 2rem;
     background: white;
+    border-radius: .5rem;
     outline: var(--outline);
     outline-offset: -1rem;
     outline-color: var(--light-color);
     text-align: center;
     box-shadow: var(--box-shadow);
+    /* width: 30%; */
 }
 
 .features .box-container .box:hover{
@@ -428,6 +431,53 @@ section{
 
 .products .products-slider .box .btn{
     padding: .6rem 1.5rem;
+}
+
+/* CSS Code For Categories Section */
+
+.categories .box-container{
+    display: flex;
+    /* border: 1px solid black; */
+    gap: 1.5rem;
+}
+
+.categories .box-container .box{
+    /* border: 2px solid red; */
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: .5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    outline-color: var(--light-color);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.categories .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+
+.categories .box-container .box img{
+    margin: .8rem 0;
+    height: 8rem;
+    width: 11.8rem;
+}
+
+.categories .box-container .box h3{
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.categories .box-container .box p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--light-color);
+}
+
+.categories .box-container .box .btn{
+    padding: .6rem 2rem;
+    font-size: 1rem;
 }
 
 /* @Media Queries */
