@@ -5,7 +5,7 @@
     --black: #130f40;
     --light-color: #666;
     --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    --border: 2rem solid rgba(0,0,0.1);
+    --border: .2rem solid rgba(0,0,0.1);
     --outline: .1rem solid rgba(0,0,0.1)
 }
 
@@ -342,8 +342,8 @@ section{
 /* CSS Code For Features Section */
 
 .features .box-container{
-    display: flex;
-    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -436,8 +436,8 @@ section{
 /* CSS Code For Categories Section */
 
 .categories .box-container{
-    display: flex;
-    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -532,6 +532,69 @@ section{
     padding: .5rem 0;
 }
 
+/* CSS Code For Blogs Section */
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box{
+    background: white;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.blogs .box-container .box img{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .content{
+    padding: 1.5rem;
+}
+
+.blogs .box-container .box .content .icons{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: .1rem solid lightgray;
+}
+
+.blogs .box-container .box .content .icons a{
+    color: var(--light-color);
+    font-size: 1rem;
+}
+
+.blogs .box-container .box .content .icons a:hover{
+    color: black;
+}
+
+.blogs .box-container .box .content .icons a i{
+    color: green;
+    padding-right: 1.3rem;
+}
+
+.blogs .box-container .box .content h3{
+    line-height: 1.8;
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+.blogs .box-container .box .content p{
+    color: var(--light-color);
+    font-size: .9rem;
+}
+
+.blogs .box-container .box .content .btn{
+    padding: .5rem 1.5rem;
+    font-size: 1.2rem;
+}
 
 /* @Media Queries */
 
