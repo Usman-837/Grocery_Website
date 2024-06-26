@@ -547,6 +547,10 @@ section{
     box-shadow: var(--box-shadow);
 }
 
+.blogs .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px var(--green); 
+}
+
 .blogs .box-container .box img{
     height: 15rem;
     width: 100%;
@@ -583,7 +587,6 @@ section{
     line-height: 1.8;
     color: var(--black);
     font-size: 1.5rem;
-    padding: .5rem 0;
 }
 
 .blogs .box-container .box .content p{
