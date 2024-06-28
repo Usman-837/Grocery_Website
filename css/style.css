@@ -676,6 +676,19 @@ section{
     height: 2rem;
 }
 
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;    
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--black);
+    border-top: 1px solid gray;
+}
+
+.footer .credit span{
+    color: var(--green);
+}
+
 
 
 /* @Media Queries */
