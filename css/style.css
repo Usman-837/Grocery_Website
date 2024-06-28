@@ -599,6 +599,85 @@ section{
     font-size: 1.2rem;
 }
 
+/* CSS Code for Footer */
+
+.footer{
+    background-color: #fff;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.4rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.footer .box-container .box h3 i{
+    color: var(--green);
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1rem;
+    color: vlinksr(--black);
+    padding: .5rem 0;
+}
+
+.footer .box-container .box .links i{
+    color: var(--green);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: .9rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a i{
+    /* border: 1px solid; */
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    color: var(--black);
+    background: #eee;
+    text-align: center;
+}
+
+.footer .box-container .box .share a i:hover{
+    background: var(--green);
+    color: white;
+}
+
+.footer .box-container .box .email{
+    width: 100%;
+    background: #eee;
+    padding: .8rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    text-transform: none;
+    color: var(--black);
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 1.3rem;
+    height: 2rem;
+}
+
+
+
 /* @Media Queries */
 
 @media (max-width: 991px) {
